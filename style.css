@@ -97,14 +97,15 @@ button {
     background-color: hsl(0, 0%, 25%);
     border: none;
 
-    font-size: medium   ;
+    font-size: medium;
+    font-weight: 600;
 }
 
 button:hover {
     cursor: pointer;
     transform: translateY(-2px);
 }
-    
+
 .tnc a {
     color: hsl(0, 0%, 70%);
 }
