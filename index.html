@@ -7,37 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="banner-div">
-        <img src="./images/helium-logo-transparent.png" class="initial-logo" height="40%" width="70%"> <!-- logo, then use bgimage on logo-->
-    </div>
-    <div class="form-div">
-        <img> <!-- same logo as above-->
-        <div>
-            <h1>Create an account.</h1>
-            <p>Already have an account?</p>
-            <a>Login</a>
-        </div>
-        <form>
-            <label for="first-name">First Name:&nbsp;</label>
-            <input id="first-name" name="first-name" placeholder="e.g.: Aditya">
+    <div class="container">
+        <div class="banner-div"></div>
+        <div class="form-div">
+            <div>
+                <h1>Create an account.</h1>
+                <p>Already have an account?</p>
+                <a>Login</a>
+            </div>
+            <form>
+                <label for="first-name">First Name:&nbsp;</label>
+                <input id="first-name" name="first-name" placeholder="e.g.: Aditya">
 
-            <label for="last-name">Last Name:&nbsp;</label>
-            <input id="last-name" name="last-name" placeholder="e.g.: Negi">
+                <label for="last-name">Last Name:&nbsp;</label>
+                <input id="last-name" name="last-name" placeholder="e.g.: Negi">
 
-            <label for="email"> Email ID:&nbsp;</label>
-            <input id="email" type="email" name="email" placeholder="e.g.: abc@gmail.com">
+                <label for="email"> Email ID:&nbsp;</label>
+                <input id="email" type="email" name="email" placeholder="e.g.: abc@gmail.com">
 
+                
+                <label for="pwd">Create a Password:&nbsp;</label>
+                <input id="pwd" type="password" name="pwd" placeholder="Password">
+
+                <label for="confirm-pwd">Confirm Password:&nbsp;</label>
+                <input id="confirm-pwd" type="password" name="confirm-pwd" placeholder="Confirm Password">
+
+                <button type="submit">Sign up.</button>
+            </form>
             
-            <label for="pwd">Create a Password:&nbsp;</label>
-            <input id="pwd" type="password" name="pwd" placeholder="Password">
-
-            <label for="confirm-pwd">Confirm Password:&nbsp;</label>
-            <input id="confirm-pwd" type="password" name="confirm-pwd" placeholder="Confirm Password">
-
-            <button type="submit">Sign up.</button>
-        </form>
-        
-        <p>By signing up, you agree to the Privacy Policy and Terms of Conditions.</p>
+            <p>By signing up, you agree to the Privacy Policy and Terms of Conditions.</p>
+        </div>
     </div>
 </body>
 </html>
