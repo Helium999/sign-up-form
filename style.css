@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: Roboto, sans-serif;    
 }
 
 .container{
@@ -7,24 +8,41 @@ body {
     background-image: url(./images/background-image-helium-logo.png);
     background-size: cover;
     min-height: 100dvh;
+    height: 100vh;
+    width: 100vw;
     background-repeat: no-repeat;
 }
 
-.banner-div {
+.left-div {
     width: 40vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
 }
 
-.banner-div img {
-    width: 100%;
-    height: 100%;
-}
-
-.form-div {
+.right-div {
     width: 60vw;
     height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-div {
+    height: 80%;
+    width: 80%;
+    display: flex;
     flex-direction: column;
+    background-color: rgb(3, 5, 10);
+    padding: 50px;
+    border: 2px solid rgb(58, 58, 58);
+    border-radius: 10px;
+    position: relative;
+    right: 40px;
+}
+
+form {
+    color: white;
+}
+
+.form-headings {
+    color: white;
 }
