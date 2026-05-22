@@ -46,3 +46,16 @@ body {
 .form-div:hover {
     transform: translateY(-2px);
 }
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 0.9em;
+    margin-top: -25px;
+}
+
+.login a {
+    color: white;
+}
