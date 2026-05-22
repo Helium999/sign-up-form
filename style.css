@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    display: flex;
+}
+
+.banner-div {
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.form-div {
+    width: 60vw;
+    height: 100vh;
+}
