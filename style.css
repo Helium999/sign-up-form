@@ -27,22 +27,16 @@ body {
 }
 
 .form-div {
+    color: white;
     height: 80%;
     width: 80%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(3, 5, 10);
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
     padding: 50px;
     border: 2px solid rgb(58, 58, 58);
     border-radius: 10px;
     position: relative;
-    right: 40px;
-}
-
-form {
-    color: white;
-}
-
-.form-headings {
-    color: white;
+    right: 80px;
 }
