@@ -96,6 +96,25 @@ input::placeholder {
     text-align: center;
 }
 
+.icon {
+    color: rgb(0, 161, 0);
+    font-size: x-large;
+    position: relative;
+    left: 12px;
+    top: 5px;
+}
+
+/* valid */
+input:not(:placeholder-shown):valid + .icon::before{
+    content: "✓"; 
+}
+
+/* invalid */
+input:not(:placeholder-shown):invalid + .icon::before{
+    content: "✗";
+    color: red;
+}
+
 button {
     width: 150px;
     align-self: center;
