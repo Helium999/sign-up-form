@@ -104,12 +104,10 @@ input::placeholder {
     top: 5px;
 }
 
-/* valid */
 input:not(:placeholder-shown):valid + .icon::before{
     content: "✓"; 
 }
 
-/* invalid */
 input:not(:placeholder-shown):invalid + .icon::before{
     content: "✗";
     color: red;

@@ -25,27 +25,36 @@
                 </div>
                 <form>
                     <p>
-                    <input id="first-name" name="first-name" aria-label="First Name" placeholder="FIRST NAME">
+                    <input id="first-name" name="first-name" aria-label="First Name" 
+                    placeholder="FIRST NAME *" pattern="^[a-zA-Z\s]+$" maxlength="30" required>
                     <span class="icon"></span>
                     </p>
 
                     <p>
-                    <input id="last-name" name="last-name" aria-label="Last Name" placeholder="LAST NAME">
+                    <input id="last-name" name="last-name" aria-label="Last Name" 
+                    placeholder="LAST NAME" pattern="^[a-zA-Z\s]+$" maxlength="30">
                     <span class="icon"></span>
                     </p>
 
                     <p>
-                    <input id="email" type="email" name="email" aria-label="Email" placeholder="EMAIL ID">
+                    <input id="email" type="email" name="email" aria-label="Email" 
+                    placeholder="EMAIL ID *" maxlength="40" required>
                     <span class="icon"></span>
                     </p>
 
                     <p>
-                    <input id="pwd" type="password" name="pwd" aria-label="Password" placeholder="PASSWORD">
+                    <input id="pwd" type="password" name="pwd" aria-label="Password" 
+                    placeholder="PASSWORD *" 
+                    pattern="[A-Za-z0-9 !&#34;#$%&'()*+,./:;<=>?@\[\\\]^_`{|}~-]+" 
+                    minlength="8" maxlength="24" required>
                     <span class="icon"></span>
                     </p>
 
                     <p>
-                    <input id="confirm-pwd" type="password" name="confirm-pwd" aria-label="Confirm Password" placeholder="CONFIRM PASSWORD">
+                    <input id="confirm-pwd" type="password" name="confirm-pwd" 
+                    aria-label="Confirm Password" placeholder="CONFIRM PASSWORD *" 
+                    pattern="[A-Za-z0-9 !&#34;#$%&'()*+,./:;<=>?@\[\\\]^_`{|}~-]+" 
+                    minlength="8" maxlength="24" required>
                     <span class="icon"></span>
                     </p>
 
@@ -60,5 +69,21 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const pwdInput = document.getElementById('pwd');
+        const confirmPwdInput = document.getElementById('confirm-pwd');
+        const allowedPattern = /^[A-Za-z0-9 !"#$%&'()*+,./:;<=>?@[\\\]^_`{|}~-]*$/;
+
+        [pwdInput, confirmPwdInput].forEach(input => {
+            input.addEventListener('input', function() {
+                if (!allowedPattern.test(this.value)) {
+                    this.setCustomValidity('Invalid character detected');
+                } else {
+                    this.setCustomValidity('');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
